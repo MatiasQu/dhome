@@ -1,6 +1,8 @@
 //Helpers go here
 
 if (Meteor.isClient){
+Session.
+
 
 Template.projects.helpers({
   projectList: function () {return Projects.find();}
@@ -21,10 +23,15 @@ Template.projectForm.events({   //Will be used when new project gets created
 		// var vtimeLeft = 
 		var vbudget = template.find('.budget').value;
 		var vbidToClose = template.find('.bidToClose').value;
-		alert(vendDate);
 		addProject(vdescription, vlocation, vdate, vendDate, vbudget, vbidToClose); //cur lowest bid & post ends need to be implemented
 	}
 });
+
+Template.projectRow.events({
+	'click': function(event, template){
+		alert(template.data._id);
+	}
+})
 var addProject = function(des, loc, dat, end, bud, bid2close) {
 	Projects.insert({
 		description: des,

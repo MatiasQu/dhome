@@ -1,6 +1,5 @@
 <template name="projects">
 	{{>projectForm}}
-
 	<div class="container">
 		<div>
 			<p>
@@ -42,15 +41,16 @@
 		<td>{{budget}}</td>
 		<td>{{bidToClose}}</td>
 		<td>{{currentLowestBid}}</td> <!--Implement-->
-		<a class="btn btn-sm btn-default" href="/placeabid" role="button">Place a Bid</a>
+		<td>{{> biddingModal}}</td>
   	</tr>
-
 </template>
+
+
 
 <template name ="projectForm">
 <div class ="modal=footer">
-	<a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Post a Project</a>
-	<div class="modal fade" id="modal-id">
+	<a class="btn btn-primary" data-toggle="modal" href='#modal-id0'>Post a Project</a>
+	<div class="modal fade" id="modal-id0">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -104,4 +104,34 @@
 		</div>
 	</div>
 </div>
+</template>
+
+
+<template name= "biddingModal">
+	<a class="btn btn-success" data-toggle="modal" href='#modal-id1'>Place a Bid</a>
+	<div class="modal fade" id="modal-id1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Please Carefully Choose Your Bid.</h4>
+				</div>
+				<div class="modal-body">
+					
+	   				<div><label for="name">Bid Amount:</label></div>
+					<div class="input-group">
+  						<span class="input-group-addon">$</span>
+  						<input type="text" class="form-control bidAmount" aria-label="Amount (to the nearest dollar)">
+  						<span class="input-group-addon">.00</span>
+					</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success">Confirm</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </template>
