@@ -1,0 +1,95 @@
+<template name="projects">
+	{{>projectForm}}
+	<div class="container">
+		<div>
+			<p>
+				<h1>Project:<small>Post Projects Here</small></h1>
+				<div class="table-responsive">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>Description</th> <!--** Match-->
+								<th>Location</th>
+								<th>Post Date</th>
+								<th>Post Ends</th>
+								<th>Time Left</th>
+								<th>Budget</th>
+								<th>Bid To Close</th>
+								<th>Current Lowest Bid</th>
+							</tr>
+						</thead>
+						<tbody>
+							{{#each projectList}}
+								{{> projectRow}}
+							{{/each}}
+						</tbody>
+					</table>
+				</div>
+			</p>
+		</div>
+	</div>
+</template>
+
+
+<template name ="projectRow">
+	<tr class="projectRow">
+		<td>{{description}}</td> <!--** Match-->
+		<td>{{location}}</td>
+		<td>{{date}}</td>
+		<td>{{endDate}}</td>
+		<td>{{timeLeft}}</td>
+		<td>{{budget}}</td>
+		<td>{{bidToClose}}</td>
+		<td>{{currentLowestBid}}</td> <!--Implement-->
+		<a class="btn btn-sm btn-default" href="/placeabid" role="button">Place a Bid</a>
+  	</tr>
+
+</template>
+
+<template name ="projectForm">
+<div class ="modal=footer">
+	<a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Post a Project</a>
+	<div class="modal fade" id="modal-id">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Add Project</h4>
+				</div>
+				<div class="modal-body">
+					<div>
+					<label for="Description">Project Description:</label> <!--** Match-->
+					</div>
+					<input type="text" class="input input-xlarge description" name="Description" value="" id="">
+
+					<div>
+					<label for="name">Location:</label>
+					</div>
+					<input type="text" class="input input-xlarge location" name="name" value="" id="">
+
+					<div>
+					<label for="Description">End Date:</label> <!--** Match-->
+					</div>
+					<input type="text" class="input input-xlarge endDate" name="Description" value="" id="">
+
+					<div>
+					<label for="name">Budget:</label>
+					</div>
+					<input type="text" class="input input-xlarge budget" name="name" value="" id="">
+
+					<div>
+					<label for="name">Bid to Close:</label>
+					</div>
+					<input type="text" class="input input-xlarge bidToClose" name="name" value="" id="">
+
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary save">Save changes</button>
+					<button type="button" class="btn btn-default cancel" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</template>

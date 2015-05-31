@@ -13,3 +13,5 @@ accounts-password
 twbs:bootstrap
 underscore
 jquery
+npm-container
+meteorhacks:npm

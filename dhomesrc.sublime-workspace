@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"time",
+				"timeLeft"
+			],
+			[
+				"bid",
+				"bid"
+			],
+			[
+				"bu",
+				"bud"
+			],
+			[
+				"bud",
+				"budget"
+			],
+			[
+				"bs3-text",
+				"bs3-input:text	bs3-input-text"
+			],
+			[
+				"bs3-input",
+				"bs3-input:text:h	bs3-input-text-h"
+			],
+			[
+				"bs3input",
+				"bs3-input:label	bs3-input-label"
+			],
+			[
+				"te",
+				"table	Tag"
+			],
+			[
 				"pro",
 				"projects"
 			],
@@ -52,10 +84,26 @@
 	"buffers":
 	[
 		{
+			"file": "dhomesrc/client/templates/links/project.html",
+			"settings":
+			{
+				"buffer_size": 38,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "dhomesrc/client/templates/links/projects.html",
 			"settings":
 			{
-				"buffer_size": 1572,
+				"buffer_size": 2702,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dhomesrc/client/main.js",
+			"settings":
+			{
+				"buffer_size": 272,
 				"line_ending": "Unix"
 			}
 		}
@@ -63,9 +111,53 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 107.0,
+		"height": 127.0,
 		"selected_items":
 		[
+			[
+				"git: comm",
+				"Git: Commit"
+			],
+			[
+				"git: add",
+				"Git: Add..."
+			],
+			[
+				"git: add...",
+				"Git: Add..."
+			],
+			[
+				"git :status",
+				"Git: Status"
+			],
+			[
+				"git : ",
+				"Git: Add..."
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"git: sat",
+				"Git: Status"
+			],
+			[
+				"git:stat",
+				"Git: Status"
+			],
+			[
+				"git: stat",
+				"Git: Status"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"project",
 				"Project: Save As"
@@ -75,15 +167,11 @@
 				"Git: Toggle Annotations"
 			],
 			[
-				"git: stat",
-				"Git: Status"
-			],
-			[
 				"package",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 464.0
+		"width": 564.0
 	},
 	"console":
 	{
@@ -106,15 +194,28 @@
 	"expanded_folders":
 	[
 		"/Users/franklai/dhome/dhomesrc",
-		"/Users/franklai/dhome/dhomesrc/.meteor/local",
-		"/Users/franklai/dhome/dhomesrc/client",
-		"/Users/franklai/dhome/dhomesrc/client/stylesheets",
-		"/Users/franklai/dhome/dhomesrc/client/templates",
-		"/Users/franklai/dhome/dhomesrc/client/templates/links",
-		"/Users/franklai/dhome/dhomesrc/client/templates/menus"
+		"/Users/franklai/dhome/dhomesrc/packages",
+		"/Users/franklai/dhome/dhomesrc/public",
+		"/Users/franklai/dhome/dhomesrc/public/notusing",
+		"/Users/franklai/dhome/dhomesrc/public/notusing/theme1",
+		"/Users/franklai/dhome/dhomesrc/public/notusing/theme1/img"
 	],
 	"file_history":
 	[
+		"/Users/franklai/dhome/dhomesrc/public/notusing/index.html",
+		"/Users/franklai/dhome/dhomesrc/lib/routers.js",
+		"/Users/franklai/dhome/dhomesrc/client/templates/links/COMMIT_EDITMSG.COMMIT_EDITMSG",
+		"/Users/franklai/dhome/dhomesrc/client/stylesheets/style.css",
+		"/Users/franklai/dhome/dhomesrc/.meteor/local/build/programs/server/packages/session.js",
+		"/Users/franklai/dhome/dhomesrc/.meteor/local/build/programs/server/node_modules/source-map-support/node_modules/source-map/lib/source-map/array-set.js",
+		"/Users/franklai/dhome/dhomesrc/.meteor/local/build/programs/server/npm/mongo/node_modules/mongodb/examples/replSetServersQueries.js",
+		"/Users/franklai/dhome/dhomesrc/.meteor/local/build/programs/server/npm/mongo/node_modules/mongodb/lib/mongodb/connection/repl_set/repl_set_state.js",
+		"/Users/franklai/dhome/dhomesrc/.meteor/local/build/programs/web.browser/app/notusing/theme1/font-awesome/scss/_core.scss",
+		"/Users/franklai/dhome/dhomesrc/.meteor/local/build/programs/server/npm/logging/node_modules/cli-color/node_modules/es5-ext/lib/Array/prototype/_compare-by-length.js",
+		"/Users/franklai/dhome/dhomesrc/.meteor/local/build/programs/web.browser/app/notusing/theme1/font-awesome/scss/_list.scss",
+		"/Users/franklai/dhome/dhomesrc/.meteor/local/build/programs/web.browser/app/notusing/theme1/font-awesome/scss/_rotated-flipped.scss",
+		"/Users/franklai/dhome/dhomesrc.sublime-project",
+		"/Users/franklai/dhome/dhomesrc/client/templates/links/projects.html",
 		"/Users/franklai/dhome/dhomesrc/.meteor/versions",
 		"/Users/franklai/dhome/client/templates/links/abc.html",
 		"/Users/franklai/dhome/server/server.js",
@@ -225,6 +326,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"cancel",
+			"\">\n",
+			"<label",
 			"body",
 			"							    									",
 			"url('..",
@@ -255,32 +359,87 @@
 			[
 				{
 					"buffer": 0,
-					"file": "dhomesrc/client/templates/links/projects.html",
+					"file": "dhomesrc/client/templates/links/project.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1572,
+						"buffer_size": 38,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								648,
-								648
+								27,
+								27
 							]
 						],
 						"settings":
 						{
-							"live_git_annotations": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "dhomesrc/client/templates/links/projects.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2702,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2206,
+								2206
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 982.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "dhomesrc/client/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 272,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								272,
+								272
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -320,6 +479,10 @@
 	"output.find_results":
 	{
 		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 100.0
 	},
 	"project": "dhomesrc.sublime-project",
 	"replace":
