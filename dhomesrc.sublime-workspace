@@ -1,0 +1,371 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pro",
+				"projects"
+			],
+			[
+				"bs3-talbe",
+				"bs3-table:responsive	bs3-table-responsive"
+			],
+			[
+				"bs3-table",
+				"bs3-table:bordered	bs3-table-bordered"
+			],
+			[
+				"l",
+				"li	Tag"
+			],
+			[
+				"bs3-navbar",
+				"bs3-navbar:fixed-bottom	bs3-navbar-fixed-bottom"
+			],
+			[
+				"bs3-nav",
+				"bs3-navbar:form	bs3-navbar-form"
+			],
+			[
+				"b",
+				"button	Tag"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"head",
+				"header	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "dhomesrc/client/templates/links/projects.html",
+			"settings":
+			{
+				"buffer_size": 1572,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 107.0,
+		"selected_items":
+		[
+			[
+				"project",
+				"Project: Save As"
+			],
+			[
+				"git: ann",
+				"Git: Toggle Annotations"
+			],
+			[
+				"git: stat",
+				"Git: Status"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/franklai/dhome/dhomesrc",
+		"/Users/franklai/dhome/dhomesrc/.meteor/local",
+		"/Users/franklai/dhome/dhomesrc/client",
+		"/Users/franklai/dhome/dhomesrc/client/stylesheets",
+		"/Users/franklai/dhome/dhomesrc/client/templates",
+		"/Users/franklai/dhome/dhomesrc/client/templates/links",
+		"/Users/franklai/dhome/dhomesrc/client/templates/menus"
+	],
+	"file_history":
+	[
+		"/Users/franklai/dhome/dhomesrc/.meteor/versions",
+		"/Users/franklai/dhome/client/templates/links/abc.html",
+		"/Users/franklai/dhome/server/server.js",
+		"/Users/franklai/dhome/client/templates/about.html",
+		"/Users/franklai/dhome/client/templates/menus/header.html",
+		"/Users/franklai/dhome/client/main.js",
+		"/Users/franklai/dhome/client/templates/links/projects.html",
+		"/Users/franklai/dhome/client/templates/links/faq.html",
+		"/Users/franklai/dhome/client/templates/links/owners.html",
+		"/Users/franklai/dhome/client/templates/links/contractors.html",
+		"/Users/franklai/dhome/client/templates/default_layout.html",
+		"/Users/franklai/dhome/client/templates/menu.html",
+		"/Users/franklai/dhome/client/templates/links/homepage.html",
+		"/Users/franklai/dhome/lib/routers.js",
+		"/Users/franklai/dhome/client/templates/menus/menu.html",
+		"/Users/franklai/dhome/client/templates/header.html",
+		"/Users/franklai/dhome/client/templates/projects.html",
+		"/Users/franklai/dhome/client/templates/homepage_layout.html",
+		"/Users/franklai/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/franklai/dhome/client/stylesheets/style.css",
+		"/Users/franklai/dhome/client/stylesheets/notusing.css",
+		"/Users/franklai/dhome/client/templates/index.html",
+		"/Users/franklai/dhome/client/templates/layout.html",
+		"/Users/franklai/dhome/client/templates/application/layout.html",
+		"/Users/franklai/dhome/client/stylesheets/theme1.css",
+		"/Users/franklai/dhome/dhome.sublime-workspace",
+		"/Users/franklai/dhome/client/stylesheets/theme1.less",
+		"/Users/franklai/dhome/public/theme1/font-awesome/less/bordered-pulled.less.import",
+		"/Users/franklai/dhome/public/theme1/font-awesome/less/core.less.import",
+		"/Users/franklai/dhome/public/theme1/font-awesome/less/fixed-width.less.import",
+		"/Users/franklai/dhome/public/theme1/font-awesome/less/font-awesome.less.import",
+		"/Users/franklai/dhome/public/theme1/font-awesome/less/icons.less.import",
+		"/Users/franklai/dhome/public/theme1/font-awesome/less/larger.less.import",
+		"/Users/franklai/dhome/public/theme1/font-awesome/less/list.less.import",
+		"/Users/franklai/dhome/public/theme1/font-awesome/less/mixins.less.import",
+		"/Users/franklai/dhome/public/theme1/font-awesome/less/path.less.import",
+		"/Users/franklai/dhome/public/theme1/font-awesome/less/rotated-flipped.less.import",
+		"/Users/franklai/dhome/public/theme1/font-awesome/less/spinning.less.import",
+		"/Users/franklai/dhome/public/theme1/font-awesome/less/stacked.less.import",
+		"/Users/franklai/dhome/public/theme1/font-awesome/less/variables.less.import",
+		"/Users/franklai/dhome/client/templates/theme1.css",
+		"/Users/franklai/dhome/client/templates/startbootstrap-stylish-portfolio-1.0.3.copy/index.html",
+		"/Users/franklai/dhome/lib/router.js",
+		"/Users/franklai/dhome/client/templates/startbootstrap-landing-page-1.0.3.copy/index.html",
+		"/Users/franklai/dhome/client/templates/startbootstrap-landing-page-1.0.4 copy/index.html",
+		"/Users/franklai/dhome/client/templates/startbootstrap-landing-page-1.0.4.copy/index.html",
+		"/Users/franklai/dhome/client/templates/startbootstrap-landing-page-1.0.4/index.html",
+		"/Users/franklai/dhome/client/templates/includes/header.html",
+		"/Users/franklai/dhome/client/main.html",
+		"/Users/franklai/dhome/client/templates/startbootstrap-landing-page-1.0.4/landing.html",
+		"/Users/franklai/dhome/client/templates/intro.html",
+		"/Users/franklai/Library/Application Support/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/Users/franklai/dhome/client/templates/intro",
+		"/client/templates/application/layout.html",
+		"/opt/X11/bin/abc",
+		"/Users/franklai/dhome/abc.txt",
+		"/Users/franklai/dhome/abc",
+		"/Users/franklai/Downloads/Microscope-sidebar9-5-4/client/templates/posts/post_page.html",
+		"/Users/franklai/Downloads/Microscope-sidebar9-5-4/lib/router.js",
+		"/Users/franklai/Downloads/Microscope-sidebar9-5-4/client/templates/posts/post_item.html",
+		"/Users/franklai/Microscope-chapter5_1/lib/router.js",
+		"/Users/franklai/microscope/lib/router.js",
+		"/Users/franklai/Microscope-chapter5-1/client/main.js",
+		"/Users/franklai/Google Drive/School/UofT/15 Summer/CSC209/w2/lab1/CB1.c",
+		"/Users/franklai/microscope/client/views/application/layout.html",
+		"/Users/franklai/microscope/client/views/posts/layout.html",
+		"/Users/franklai/microscope1/collection/main.html",
+		"/Users/franklai/microscope1/collection/main.js",
+		"/Users/franklai/microscope1/lib/router.js",
+		"/Users/franklai/microscope1/client/views/application/layout.html",
+		"/Users/franklai/microscope1/client/views/posts/posts_item.html",
+		"/Users/franklai/microscope1/client/views/posts/fun.html",
+		"/Users/franklai/microscope1/client/views/posts/posts_item.js",
+		"/Users/franklai/microscope1/client/views/posts/posts_list.html",
+		"/Users/franklai/microscope1/client/views/posts/posts_list.js",
+		"/Users/franklai/microscope1/collection/posts.js",
+		"/Users/franklai/microscope1/server/fixtures.js",
+		"/Users/franklai/microscope1/server/publish.js",
+		"/Users/franklai/microscope1/client/subscribe.js",
+		"/Users/franklai/microscope1/microscope1.css",
+		"/Users/franklai/microscope/client/mian.js",
+		"/Users/franklai/microscope/server/fixtures.js",
+		"/Users/franklai/microscope/client/main.html",
+		"/Users/franklai/microscope/stylesheets/style.css",
+		"/Users/franklai/Downloads/javascriptTUT_follow_along.html",
+		"/Users/franklai/Downloads/javascriptTUT_follow_along",
+		"/Users/franklai/Downloads/test1.html",
+		"/Users/franklai/Downloads/test0.html",
+		"/Users/franklai/Downloads/jsFolder/abc.html",
+		"/Users/franklai/Downloads/jsFolder/abc",
+		"/Users/franklai/Downloads/webpage.html",
+		"/Users/franklai/Downloads/main.css",
+		"/Users/franklai/Downloads/abc.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"body",
+			"							    									",
+			"url('..",
+			"'..",
+			"url('.."
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"url('/Users/franklai/dhome/public/theme1",
+			"url('../Users/franklai/dhome/public/theme1",
+			"/Users/franklai/dhome/public/theme1"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "dhomesrc/client/templates/links/projects.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1572,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								648,
+								648
+							]
+						],
+						"settings":
+						{
+							"live_git_annotations": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "dhomesrc.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				".meteor/versions"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 157.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
