@@ -1,0 +1,43 @@
+<template name="projects">
+	<div class="container">
+		
+		<div>
+			<p>
+				<h1>Project:<small>Post Projects Here</small></h1>
+				<div class="table-responsive">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>Post Date</th>
+								<th>Location</th>
+								<th>Budget</th>
+								<th>Current Bid</th>
+								<th>Take the Contract Now</th>
+								<th>Time Left</th>
+							</tr>
+						</thead>
+						<tbody>
+							{{#each projectList}}
+
+								{{> projectRow}}
+							{{/each}}
+						</tbody>
+					</table>
+				</div>
+			</p>
+		</div>
+	</div>
+</template>
+
+
+<template name ="projectRow">
+	<tr class="projectRow">
+		<td>{{postDate}}</td>
+		<td>{{location}}</td>
+		<td>{{budget}}</td>
+		<td>{{currentBid}}</td>
+		<td>{{takeTheContractNow}}</td>
+		<td>{{timeLeft}}</td>
+	</tr>
+
+</template>
