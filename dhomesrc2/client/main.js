@@ -6,6 +6,10 @@ Template.projects.helpers({
   projectList: function () {return Projects.find();}
 });
 
+Template.projects.onRendered(function() {
+    this.$('.datetimepicker').datetimepicker();
+});
+
 //Convert data in projectForm into template variables
 
 Template.projectForm.events({   //Will be used when new project gets created 
@@ -17,7 +21,7 @@ Template.projectForm.events({   //Will be used when new project gets created
 		// var vtimeLeft = 
 		var vbudget = template.find('.budget').value;
 		var vbidToClose = template.find('.bidToClose').value;
-		alert(vdescription + vdate);
+		alert(vendDate);
 		addProject(vdescription, vlocation, vdate, vendDate, vbudget, vbidToClose); //cur lowest bid & post ends need to be implemented
 	}
 });
@@ -26,11 +30,10 @@ var addProject = function(des, loc, dat, end, bud, bid2close) {
 		description: des,
 		location: loc,
 		date: dat,
-		// endDate: ....
+		endDate: end,
 		//timeLeft: ...
-		budget: bud,
-		bidToClose: bid2close
-
+		budget: "$" + bud,
+		bidToClose: "$" + bid2close
 	});
 };
 
