@@ -1,5 +1,8 @@
 <template name="projects">
+
 	{{>projectForm}}
+
+
 	<div class="container">
 		<div>
 			<p>
@@ -22,6 +25,9 @@
 							{{#each projectList}}
 								{{> projectRow}}
 							{{/each}}
+							<!--{{#each projectList}}
+							<div>{{> biddingModal}}</div>-->
+							
 						</tbody>
 					</table>
 				</div>
@@ -40,8 +46,9 @@
 		<td>{{timeLeft}}</td>
 		<td>{{budget}}</td>
 		<td>{{bidToClose}}</td>
-		<td>{{currentLowestBid}}</td> <!--Implement-->
+		<td>{{bidAmount}}</td> <!--Implement-->
 		<td>{{> biddingModal}}</td>
+	
   	</tr>
 </template>
 
@@ -107,8 +114,9 @@
 </template>
 
 
+
 <template name= "biddingModal">
-	<a class="btn btn-success" data-toggle="modal" href='#modal-id1'>Place a Bid</a>
+	<a class="btn btn-success placeABid" data-toggle="modal" href='#modal-id1'>Place a Bid</a>
 	<div class="modal fade" id="modal-id1">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -126,8 +134,8 @@
 					</div>
 
 				<div class="modal-footer">
-					<button type="button" class="btn btn-success">Confirm</button>
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-dangeoues confirm">Confirm</button>
+					<button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
 				</div>
 				</div>
 			</div>
