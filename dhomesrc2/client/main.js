@@ -39,7 +39,7 @@ Template.biddingModal.events({
 		},
 	'click .confirm': function(event, template) {
 		var vbidAmount = template.find('.bidAmount').value;
-		Projects.update({_id: Session.get('myid')}, {$set: {bidAmount: vbidAmount}});   // Add filed***************** $set *******************
+		Projects.update({_id: Session.get('myid')}, {$set: {bidAmount: "$" + vbidAmount}});   // Add filed***************** $set *******************
 	}
 })
 

@@ -4,6 +4,16 @@ Projects = new Meteor.Collection('projects');
   return 1; // moment(date).format('MM-DD-YYYY');
 });
 */
+Meteor.startup(function() {
+Meteor.methods({
+	removeAllProjects: function(){
+		Projects.remove({});
+	}
+})
+});
+
+
+
 Router.configure({
 	layoutTemplate: 'defaultLayout',
 	notFoundTemplate: 'inConstruction'
