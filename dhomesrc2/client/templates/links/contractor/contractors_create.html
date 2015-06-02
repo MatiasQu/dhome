@@ -1,0 +1,25 @@
+<template name = "contractorsCreate">
+<div class="container">
+	<div style="position:absolute;width:20%">
+	<input type="file" class="imageInput"/>
+	</div>
+	<table style="position:absolute;margin-left:20%">
+		<tr><p> Name: </p></tr>
+		<tr><textarea name="text" rows="1" cols="70" class="nameInput" maxlength="50" placeholder="Insert name here"></textarea></tr>
+		<tr><p> Description: </p></tr>
+		<tr><textarea name="text" rows="7" cols="90" class="descInput" maxlength="500" placeholder="Insert description here"></textarea></tr>
+		<tr><a class="btn btn-primary submitPage"> Create Page </a></tr>
+		{{>imageView}}
+	</table>
+</div>
+</template>
+
+<template name="imageView">
+  <div class="imageView">
+    {{#each images}}
+      <div>
+        <img src="{{this.url}}"/>
+      </div>
+    {{/each}}
+  </div>
+</template>

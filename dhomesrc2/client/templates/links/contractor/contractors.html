@@ -1,0 +1,23 @@
+<template name = "contractors">
+<div class="container">
+	<a href="/contractors/create" class="btn btn-primary" style="margin-bottom:10px"> Create a page </a>
+	<div class="table-responsive">
+		<table class="table table-hover">
+			<tbody>
+				{{#each contractorList}}
+					{{> contractorPageSummary}}
+				{{/each}}
+			</tbody>
+		</table>
+	</div>
+</div>
+</template>
+
+<template name ="contractorPageSummary">
+<tr>
+	<td><img src={{imagesURL}} /></td>
+	<td>{{name}}</td>
+	<td>{{description}}</td>
+	<td><a class="btn btn-primary" href={{pathFor 'contractorsEdit'}}> Edit </a></td>
+</tr>
+</template>

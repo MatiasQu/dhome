@@ -2,10 +2,20 @@
 
 if (Meteor.isClient){
 Session.setDefault('editing_project', false);  // Should be null? Seems to work just fine
+Session.images = ""
 
+Template.contractors.helpers({
+	contractorList: function() {return Contractors.find();}
+});
 
 Template.projects.helpers({
   projectList: function () {return Projects.find();}
+});
+
+Template.imageView.helpers({
+  images: function () {
+    return Session.images; // Where Images is an FS.Collection instance
+  }
 });
 
 /*Template.projects.events({
@@ -43,9 +53,6 @@ Template.biddingModal.events({
 	}
 })
 
-
-
-
 var addProject = function(des, loc, dat, end, bud, bid2close) {
 	Projects.insert({
 		description: des,
@@ -57,5 +64,42 @@ var addProject = function(des, loc, dat, end, bud, bid2close) {
 		bidToClose: "$" + bid2close
 	});
 };
+
+Template.contractorsCreate.events({
+	'click .submitPage': function(event, template) {	//Used when a new contractor page is submitted
+		var pname = template.find('.nameInput').value;
+		var pdescription = template.find('.descInput').value;
+		createpage(pname,pdescription);
+		Router.go('contractors');
+	},
+	'change .imageInput': function(event, template) {	//to show current uploaded images
+		var files = event.target.files;
+		for (var i = 0, ln = files.length; i < ln; i++) {
+			Images.insert(files[i], function (err, fileObj) {
+				Session.images = imagesURL;
+			});
+		
+		}
+	},
+});
+
+var createpage = function(pname,pdescription) {
+	Contractors.insert({
+		name: pname,
+		description: pdescription,
+	});
+};
+
+Template.contractorsEdit.events({		//Used when a contractor page is edited
+	'click .saveChanges': function(event, template) {
+		var pname = template.find('.nameInput').value;
+		var pdescription = template.find('.descInput').value;
+		Contractors.update(	{_id: this._id},{
+			name: pname,
+			description: pdescription,
+			});
+		Router.go('contractors');
+	}
+});
 
 }

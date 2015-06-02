@@ -19,3 +19,5 @@ meteorhacks:npm
 npm-container
 tsega:bootstrap3-datetimepicker
 clinical:session-extended-api
+cfs:standard-packages
+cfs:gridfs
